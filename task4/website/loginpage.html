@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+ <html>
+     <head>
+        <script>
+            function Validation(){
+                var uname=document.myform.username.value;
+                var pswrd=document.myform.password.value;
+                if(uname==null||uname=="")
+                {
+                    alert("Name can't be blank")
+                    return false;
+                }else if(pswrd.length<6){
+                    alert("password must be 6 characters")
+                    return false;
+    
+                }
+                return true;
+            }
+            </script>
+       
+        <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+           <title>Login form</title>
+           <link rel="stylesheet" href="style.css">
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+     <link href="register.html">
+        </head>
+        <body>
+            <audio controls>
+                <source src="c:\Users\SANJAY\Downloads\WhatsApp Audio 2024-05-30 at 6.27.47 AM.ogg">
+              </audio> 
+            <form name ="myform" action="D:\DATA BACKUP ON 29-05-2024\DESKTOP\html link task1\loginsucees.html" onsubmit="return Validation(this)">
+            
+        <button> <a href="D:\DATA BACKUP ON 29-05-2024\DESKTOP\website\dance2.html">Home</a></button>
+        <div class="wrapper">
+                  <h1>Login</h1>
+                <div class="input-box">
+                    <input type="text"  name="username"placeholder="Username" required>
+                    <i class='bx bxs-user'></i>
+                </div>
+                <div class="input-box">
+                <input type="password"  name="password" placeholder="password" required >
+                <i class='bx bx-lock-alt' ></i>
+                </div>
+                <div class="remeber-forget">
+                    <label><input type="checkbox">Remember Me</label>
+                    <a href="#">Forget password</a>
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                            <div class="register-link">
+                                <p>Dont have an account? <a href="register.html">Register</a></p>
+                </form>
+            </div>
+            </div>
+        </body>
+            </html>
+        
+            
+                    
+                              
+                          

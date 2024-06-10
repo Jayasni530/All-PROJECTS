@@ -1,0 +1,83 @@
+
+
+<!DOCTYPE html>
+ <html> 
+    <head> 
+        <title>ui pages</title>
+        <style>
+          body{
+            background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20201024/pngtree-minimal-cylinder-podium-scene-with-geometrical-forms-image_435987.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+          
+            font-style: italic;
+            font-size: smaller;
+          }
+        </style>
+      
+          
+          <script>  
+          function validateemail()  
+          {  
+          var myemail=document.myform.email.value;  
+          var atposition=myemail.indexOf("@");  
+          var dotposition=myemail.lastIndexOf(".");  
+          if (atposition<1 || dotposition<atposition+2 || dotposition+2>=myemail.length){  
+            alert("Please enter a valid e-mail address \n atpostion:"+atposition+"\n dotposition:"+dotposition);  
+            return false;  
+            }  
+          }  
+          </script>  
+          <body>  
+          <form name="myform"  method="post" action="D:\DATA BACKUP ON 29-05-2024\DESKTOP\website\thankyou.html" onsubmit="return validateemail();">  
+         <button> <a href="D:\DATA BACKUP ON 29-05-2024\DESKTOP\website\dance2.html">Home</a></button>
+                 <form> 
+                    <h1 align="center"> REGISTRATION </h1>
+                     <table align="center" cellspacing="10">
+                         <tr>
+                             <td>Full Name::</td>
+                              <td> <input name="uname" type="text"> </td>
+                             </tr>
+                              <tr> 
+                                <td>Password::</td>
+                                 <td> <input name="pwd" type="password"> </td> </tr>
+                                  <tr>
+                                     <td> E-mail ID:: </td>
+                                      <td> <input name="email" type="text"> </td> </tr>
+                                       <tr>
+                                         <td> Phone Number:: </td>
+                                          <td> <input name="phno" type="text" maxlength="10"> </td> </tr>
+                                           <tr>
+                                             <td> Gender:: </td>
+                                              <td> <input name="gender" type="radio" value="Male">&nbsp;&nbsp;Male &nbsp;&nbsp;&nbsp;&nbsp;
+                                                 <input name="gender" type="radio" value="Female">&nbsp;&nbsp;Female 
+                                                 <input name="gender" type="radio" value="others">&nbsp;&nbsp;others</td>
+                                                 </tr>
+                                                  <tr> 
+                                                    <td> Date of Birth </td> 
+                                                    <td> <input type="date" name="dob" /> </td>
+                                                  </tr>
+                                                 <tr>
+                                                  <td>List of Dance</td>
+                                                 <td> <select name="select dance list">
+                                                  <option selected>--Select Dance</option>
+                                                  <option>salsa</option>
+                                                  <option>classic</option>
+                                                  <option>break Dance</option>
+                                                  <option>hip-hop</option>
+                                                  <option>kathakali</option></td>
+                                                 </tr>
+                                                 <tr>
+                                                  <td><input type="submit" value="register"></td>
+                                                 </tr>
+                                                 
+                     </table>
+                     
+                    
+                 </form>
+               </body>
+ </html>
+
+
+
+
